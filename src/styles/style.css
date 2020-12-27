@@ -1,1 +1,35 @@
 /** CSS STYLE **/
+
+:root {
+  /** colors **/
+  --white: #fff;
+  --transparent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main-color: #fe8a02;
+  --main-color-dark: #42413c;
+  --dark: #2a2626;
+  --transparent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+
+  /** fonts **/
+  --main-font: "Open Sans";
+  --heading-font: Neucha;
+  --font-size: 16px;
+  --font-line-height: 1.6em;
+  --font-color: #2a2626;
+
+  /** headings **/
+  --heading-line-height: 1.2em;
+  --heading-1-size: 72px;
+  --heading-2-size: 60px;
+  --heading-3-size: 34px;
+
+  /** sections **/
+  --max-content-width: 1110px;
+}
+
+section {
+  max-width: 1110px;
+  margin: 100px auto;
+}
