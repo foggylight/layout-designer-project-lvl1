@@ -4,12 +4,12 @@
   /** colors **/
   --white: #fff;
   --transparent-white: #d7ccc0;
-  --light: #f5f4f0;
-  --main-color: #fe8a02;
-  --main-color-dark: #42413c;
-  --dark: #2a2626;
-  --transparent-dark: #908d8b;
-  --brown: #b09a81;
+  --text: #2a2626;
+  --bg-light: #f5f4f0;
+  --bg-dark: #b09a81;
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --secondary-dark: #908d8b;
   --blue: #1085c5;
 
   /** fonts **/
@@ -20,16 +20,134 @@
   --font-color: #2a2626;
 
   /** headings **/
-  --heading-line-height: 1.2em;
-  --heading-1-size: 72px;
-  --heading-2-size: 60px;
-  --heading-3-size: 34px;
+  --h-line-height: 1.2em;
+  --h1-size: 72px;
+  --h2-size: 60px;
+  --h3-size: 34px;
 
   /** sections **/
   --max-content-width: 1110px;
 }
 
-section {
-  max-width: 1110px;
-  margin: 100px auto;
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ELEMENTS STYLES */
+
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  color: var(--text);
+}
+
+.bg {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.bg::before {
+  position: absolute;
+  top: 0;
+
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  background-image: url(../../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: '';
+}
+
+.container {
+  position: relative;
+
+  box-sizing: border-box;
+  height: 100vh;
+  min-height: 900px;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 100px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-2 {
+  display: flex;
+  width: 100%;
+}
+
+.text-block {
+  flex-basis: 50%;
+}
+
+.text-block p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.text-block p:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 24px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+/* ATOMIC STYLES */
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mt-38 {
+  margin-top: 38px;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--bg-light);
+}
+
+h1 {
+  z-index: 1;
+
+  font-family: var(--heading-font);
+  font-size: var(--h1-size);
+  line-height: var(--h-line-height);
+}
+
+h1 span {
+  color: var(--primary);
+}
+
+.header-img {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+
+  height: 525px;
 }
