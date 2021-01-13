@@ -312,14 +312,14 @@ header .btn.nav {
   color: var(--transparent-white);
 }
 
-.distortion h2 {
-  margin-bottom: 30px;
-}
-
 .subtext {
   font-size: 34px;
   font-family: var(--heading-font);
   line-height: var(--h-line-height);
+}
+
+.distortion .subtext {
+  margin-top: 30px;
 }
 
 .how-work {
@@ -355,7 +355,7 @@ header .btn.nav {
 }
 
 ul + p {
-  margin-bottom: 22px;
+  margin: 20px 0 22px;
 }
 
 /* FOOTER */
@@ -398,23 +398,20 @@ ul + p {
 .subscription-form .btn {
   position: relative;
 
-  width: 62px;
+  width: 70px;
   height: 50px;
 }
 
 .subscription-form .btn::before {
-  position: relative;
-  left: -5px;
-
   display: block;
   width: 24px;
   height: 24px;
 
-  content: url(/src/images/send.svg);
+  content: url(../images/send.svg);
 }
 
 .terms {
-  height: 25px;
+  margin: 3px 0;
 
   font-size: 12px;
 }
@@ -424,7 +421,7 @@ ul + p {
 }
 
 .copyright {
-  margin: 76px 0 11px;
+  margin: 76px 0 19px;
 
   font-size: 14px;
   text-align: center;
