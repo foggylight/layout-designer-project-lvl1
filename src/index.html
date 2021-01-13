@@ -45,14 +45,14 @@
               Если мы сможем минимизировать воздействие одного или нескольких из
               этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.
             </p>
-            <a class="btn" href="#navigation">Подробнее</a>
+            <a class="btn nav" href="#navigation">Подробнее</a>
           </div>
         </div>
       </div>
     </header>
     <main>
       <!-- VIDEO -->
-      <section id="section-video">
+      <section class="section-video">
         <div class="container">
           <h2>
             <span class="dark">Что же это такое, </span><br />
@@ -251,8 +251,26 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer>
-
+      <div class="container">
+        <div class="subscription-box">
+          <p class="subtext">Хотите узнать больше? <br />Подпишитесь на обновления</p>
+          <div class="form-block">
+            <p class="title">Электронная почта</p>
+            <form class="subscription-form" method="GET" action="#">
+              <input type="email" name="email" placeholder="Ваша электронная почта">
+              <button class="btn" type="submit"></button>
+            </form>
+            <p class="terms">Подписываясь, вы принимаете <a href="#">правила сервиса</a></p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© 2020 Александра Азарова</p>
+          <p>По материалам статьи Yash Ranadive <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Cognitive Biases in Programming</a></p>
+          <a href="https://ru.hexlet.io">Курсы программирования Hexlet</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

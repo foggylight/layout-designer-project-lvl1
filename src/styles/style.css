@@ -8,6 +8,7 @@
   --bg-light: #f5f4f0;
   --bg-dark: #b09a81;
   --primary: #fe8a02;
+  --primary-hover: #ea7600;
   --primary-dark: #42413c;
   --secondary-dark: #908d8b;
   --blue: #1085c5;
@@ -46,6 +47,13 @@ p {
 
   font-weight: inherit;
   font-size: inherit;
+}
+
+input,
+button {
+  padding: 0;
+
+  border: none;
 }
 
 /* ELEMENTS */
@@ -148,13 +156,14 @@ p {
   color: var(--white);
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
 
   background-color: var(--primary);
   cursor: pointer;
 }
 
-.primary {
-  color: var(--primary);
+.btn:hover {
+  background-color: var(--primary-hover);
 }
 
 /* HEADER */
@@ -175,25 +184,25 @@ header .container {
   right: -270px;
 }
 
-header .btn {
+header .btn.nav {
   margin-top: 40px;
 }
 
 /* VIDEO */
 
-#section-video {
+.section-video {
   height: 805px;
 
   background-color: var(--white);
 }
 
-#section-video .container {
+.section-video .container {
   z-index: 1;
 
   align-items: center;
 }
 
-#section-video h2 {
+.section-video h2 {
   margin-bottom: 30px;
 
   text-align: center;
@@ -227,7 +236,7 @@ header .btn {
   margin-right: 30px;
 }
 
-#navigation .card-heading h2 {
+.card-heading h2 {
   font-size: 52px;
 }
 
@@ -303,9 +312,11 @@ header .btn {
   color: var(--transparent-white);
 }
 
-.subtext {
-  margin-top: 30px;
+.distortion h2 {
+  margin-bottom: 30px;
+}
 
+.subtext {
   font-size: 34px;
   font-family: var(--heading-font);
   line-height: var(--h-line-height);
@@ -344,5 +355,86 @@ header .btn {
 }
 
 ul + p {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
+}
+
+/* FOOTER */
+
+.subscription-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 190px;
+  padding: 0 55px;
+
+  color: var(--white);
+
+  background-color: var(--primary-dark);
+}
+
+.form-block {
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 15px;
+}
+
+.form-block .title {
+  margin-bottom: 9px;
+
+  font-size: 18px;
+}
+
+.subscription-form {
+  display: flex;
+  width: 100%;
+}
+
+.subscription-form input {
+  flex-grow: 2;
+  height: 50px;
+  padding-left: 15px;
+}
+
+.subscription-form .btn {
+  position: relative;
+
+  width: 62px;
+  height: 50px;
+}
+
+.subscription-form .btn::before {
+  position: relative;
+  left: -5px;
+
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  content: url(/src/images/send.svg);
+}
+
+.terms {
+  height: 25px;
+
+  font-size: 12px;
+}
+
+.terms a {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin: 76px 0 11px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.copyright p {
+  margin-bottom: 16px;
+}
+
+.copyright a {
+  color: var(--blue);
+  text-decoration: underline;
 }
