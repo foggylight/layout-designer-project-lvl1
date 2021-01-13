@@ -355,7 +355,7 @@ header .btn.nav {
 }
 
 ul + p {
-  margin: 20px 0 22px;
+  margin: 20px 0 18px;
 }
 
 /* FOOTER */
@@ -379,7 +379,7 @@ ul + p {
 }
 
 .form-block .title {
-  margin-bottom: 9px;
+  margin-bottom: 7px;
 
   font-size: 18px;
 }
@@ -428,7 +428,7 @@ ul + p {
 }
 
 .copyright p {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .copyright a {
