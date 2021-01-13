@@ -57,7 +57,7 @@ body {
 
   color: var(--text);
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--font-size);
   font-family: var(--main-font);
 }
 
@@ -113,8 +113,6 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 30px;
-
   font-size: var(--h2-size);
 }
 
@@ -136,7 +134,7 @@ h3 {
 }
 
 p {
-  line-height: 1.6;
+  line-height: var(--font-line-height);
 }
 
 .text-block .quot {
@@ -230,8 +228,6 @@ header .btn {
 }
 
 #navigation .card-heading h2 {
-  margin-bottom: 0;
-
   font-size: 52px;
 }
 
@@ -312,7 +308,7 @@ header .btn {
 
   font-size: 34px;
   font-family: var(--heading-font);
-  line-height: 1.2em;
+  line-height: var(--h-line-height);
 }
 
 .how-work {
@@ -339,10 +335,14 @@ header .btn {
 .header h4 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: var(--h-line-height);
   text-transform: uppercase;
 }
 
 .how-work .text-col {
   margin-top: 20px;
+}
+
+ul + p {
+  margin-bottom: 25px;
 }
