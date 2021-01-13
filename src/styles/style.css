@@ -130,7 +130,6 @@ h3 {
 
 .text-col {
   display: flex;
-  width: 100%;
 }
 
 .text-block {
@@ -164,6 +163,12 @@ p {
 
 .btn:hover {
   background-color: var(--primary-hover);
+}
+
+.subtext {
+  font-size: 34px;
+  font-family: var(--heading-font);
+  line-height: var(--h-line-height);
 }
 
 /* HEADER */
@@ -247,6 +252,12 @@ header .btn.nav {
   background-color: var(--bg-light);
 }
 
+.card:hover {
+  color: var(--white);
+
+  background-color: var(--primary);
+}
+
 .card:nth-child(3n) {
   margin-right: 0;
 }
@@ -266,6 +277,10 @@ header .btn.nav {
 
 .card h3 {
   margin-bottom: 16px;
+}
+
+.card:hover > h3 {
+  color: var(--white);
 }
 
 /* MAIN SECTIONS */
@@ -310,12 +325,6 @@ header .btn.nav {
 
 .bg-dark .subtitle {
   color: var(--transparent-white);
-}
-
-.subtext {
-  font-size: 34px;
-  font-family: var(--heading-font);
-  line-height: var(--h-line-height);
 }
 
 .distortion .subtext {
@@ -396,17 +405,11 @@ ul + p {
 }
 
 .subscription-form .btn {
-  position: relative;
-
   width: 70px;
   height: 50px;
 }
 
 .subscription-form .btn::before {
-  display: block;
-  width: 24px;
-  height: 24px;
-
   content: url(../images/send.svg);
 }
 
