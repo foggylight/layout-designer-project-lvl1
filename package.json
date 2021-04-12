@@ -1,8 +1,13 @@
 {
-  "name": "html5-css-boilerplate",
+  "name": "cognitive-biases-landing-page",
   "version": "0.1.0",
-  "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
+  "description": "Just a simple landing page about cognitive biases in programming.",
   "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foggylight/layout-designer-project-lvl1.git"
+  },
+  "homepage": "https://github.com/foggylight/layout-designer-project-lvl1#readme",
   "dependencies": {},
   "devDependencies": {
     "htmlhint": "^0.14.2",
@@ -12,6 +17,6 @@
     "stylelint-order": "^4.1.0",
     "surge": "^0.21.7"
   },
-  "author": "Nikita Mikhaylov",
+  "author": "Aleksandra Azarova",
   "license": "ISC"
 }
